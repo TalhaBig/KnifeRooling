@@ -6,13 +6,22 @@ using UnityEngine.SceneManagement;
 
 public class TrunkController : MonoBehaviour
 {
-    public float speed = -1.5f;
     public int health = 5;
     public AudioClip breakClip;
     public AudioClip startClip;
 
+    private TrunkSpeedController trunkSpeedController;
+    private float speed;
+
     void Start()
     {
+        trunkSpeedController = GetComponent<TrunkSpeedController>();
+
+        if (trunkSpeedController != null)
+        {
+            speed = trunkSpeedController.GetCurrentSpeed();
+        }
+
         GetComponent<AudioSource>().PlayOneShot(startClip);
     }
 

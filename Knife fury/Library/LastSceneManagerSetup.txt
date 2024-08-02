@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/KnifeHit-Unity2d-Games/Scenes/MainMenu.unity
+- path: Assets/KnifeHit-Unity2d-Games/Scenes/Level1.unity
   isLoaded: 1
   isActive: 1

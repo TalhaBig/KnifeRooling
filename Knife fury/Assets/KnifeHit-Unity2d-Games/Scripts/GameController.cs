@@ -13,6 +13,11 @@ public class GameController : MonoBehaviour
         LoadHighScore();
     }
 
+    void OnApplicationQuit()
+    {
+        SaveHighScore();
+    }
+
     public static void SetScore(int newScore)
     {
         score += newScore;
@@ -37,10 +42,11 @@ public class GameController : MonoBehaviour
 
     public static void SaveHighScore()
     {
-        if (score == highScore)
+        if (score > highScore)
         {
-            PlayerPrefs.SetInt("HighScore", highScore);
+            highScore = score;
         }
+        PlayerPrefs.SetInt("HighScore", highScore);
     }
 
     void LoadHighScore()
@@ -88,6 +94,7 @@ public class GameController : MonoBehaviour
 
     public void Quit()
     {
+        SaveHighScore();
         Application.Quit();
     }
 }
