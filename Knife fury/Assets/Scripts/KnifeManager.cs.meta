@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 3015f03d567bf0546aaca6247036a98d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - iconKnifePrefab: {instanceID: 0}
+  - knifePanel: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
