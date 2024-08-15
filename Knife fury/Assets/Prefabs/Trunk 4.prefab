@@ -135,6 +135,9 @@ MonoBehaviour:
   fail: {fileID: 8300000, guid: 8cb826fb9630067479a432ddc1e745a7, type: 3}
   particle: {fileID: 1109613343619280, guid: 0ea72bb5a2b47f64dbe7c69180edcf80, type: 3}
   scriptEnabled: 0
+  fullPolygonCollider: {fileID: 0}
+  externalBoxCollider: {fileID: 0}
+  internalBoxCollider: {fileID: 0}
 --- !u!82 &2787281207074334350
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1118,11 +1121,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec4483cd683963449818466f3c733cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialSpeed: -1.5
+  initialSpeed: -1
   slowSpeed: -0.5
   slowDownInterval: 2
   speedUpInterval: 2
-  speedIncreasePerLevel: -0.5
+  speedIncreasePerLevel: -0.2
 --- !u!1 &6271876116268086607
 GameObject:
   m_ObjectHideFlags: 0
@@ -1369,6 +1372,9 @@ MonoBehaviour:
   fail: {fileID: 8300000, guid: 8cb826fb9630067479a432ddc1e745a7, type: 3}
   particle: {fileID: 1109613343619280, guid: 0ea72bb5a2b47f64dbe7c69180edcf80, type: 3}
   scriptEnabled: 0
+  fullPolygonCollider: {fileID: 0}
+  externalBoxCollider: {fileID: 0}
+  internalBoxCollider: {fileID: 0}
 --- !u!82 &6411014500052150023
 AudioSource:
   m_ObjectHideFlags: 0

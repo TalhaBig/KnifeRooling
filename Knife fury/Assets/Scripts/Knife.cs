@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement; // Needed for scene management
 
 public class Knife : MonoBehaviour
 {
@@ -19,6 +21,16 @@ public class Knife : MonoBehaviour
     private Camera mainCamera; // Reference to the main camera
     private KnifeManager knifeManager; // Reference to the KnifeManager
 
+    // Colliders for different parts of the knife
+    public PolygonCollider2D fullPolygonCollider; // Entire knife
+    public BoxCollider2D externalBoxCollider; // External part
+    public BoxCollider2D internalBoxCollider; // Internal part
+
+    private bool isPaused = false; // Flag to check if the game is paused
+
+    // Reference to the SpriteRenderer (for 2D)
+    private SpriteRenderer spriteRenderer;
+
     void Start()
     {
         knifeRigid = GetComponent<Rigidbody2D>();
@@ -31,17 +43,29 @@ public class Knife : MonoBehaviour
         {
             Debug.LogError("KnifeManager not found in the scene.");
         }
+
+        // Get the SpriteRenderer component
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
+    void Update()
+    {
+        if (isPaused) return; // Skip updates if game is paused
+
+        // Check if input is from a UI button
+        if (Input.GetMouseButtonDown(0) && !moving && knifeManager.AreKnivesAvailable() && !IsPointerOverButton())
+        {
+            Debug.Log("Mouse button pressed and not over UI button.");
+            moving = knifeManager.UseKnife();
+        }
     }
 
     void FixedUpdate()
     {
+        if (isPaused || !scriptEnabled) return; // Skip updates if game is paused or script is disabled
+
         if (moving)
             knifeRigid.MovePosition(knifeRigid.position + Vector2.up * speed * Time.deltaTime);
-
-        if (Input.GetMouseButton(0) && !moving && knifeManager.AreKnivesAvailable())
-        {
-            moving = knifeManager.UseKnife();
-        }
 
         // Check if the knife has gone out of the camera view
         if (!IsKnifeInCameraView())
@@ -52,28 +76,27 @@ public class Knife : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (scriptEnabled)
+        if (!scriptEnabled) return; // Prevent further processing if game over has been triggered
+
+        if (collider.CompareTag("Hurdle") || collider.CompareTag("Knife"))
         {
-            if (collider.CompareTag("Hurdle") || collider.CompareTag("Knife"))
+            HandleGameOver();
+        }
+        else if (collider.CompareTag("Trunk"))
+        {
+            if (!hasHitTrunk) // Ensure trunk hit processing only if not already hit
             {
-                HandleObstacleCollision(); // Prioritize game over
+                hasHitTrunk = true;
+                HandleTrunkCollision(collider);
             }
-            else if (collider.CompareTag("Trunk"))
-            {
-                if (!hasHitTrunk) // Ensure trunk hit processing only if not already hit
-                {
-                    hasHitTrunk = true;
-                    HandleTrunkCollision(collider);
-                }
-            }
-            else if (collider.CompareTag("Apple"))
-            {
-                return;
-            }
-            else
-            {
-                HandleGameOver();
-            }
+        }
+        else if (collider.CompareTag("Apple"))
+        {
+            return;
+        }
+        else
+        {
+            HandleGameOver();
         }
     }
 
@@ -84,9 +107,13 @@ public class Knife : MonoBehaviour
         moving = false;
         AlignKnifeWithTrunk(trunk.transform); // Align the knife with the trunk's surface
         transform.parent = trunk.transform;
-        GetComponent<PolygonCollider2D>().enabled = false;
+
+        // Disable the full collider and internal collider, enable the external collider
+        fullPolygonCollider.enabled = false;
+        internalBoxCollider.enabled = false;
+        externalBoxCollider.enabled = true;
+
         knifeRigid.bodyType = RigidbodyType2D.Kinematic;
-        transform.GetChild(0).GetComponent<PolygonCollider2D>().enabled = true;
         audioSource.PlayOneShot(hitSound);
         spawn.GetComponent<SpawnController>().CreateKnife();
         trunk.GetComponent<Animator>().SetTrigger("Hit");
@@ -110,32 +137,28 @@ public class Knife : MonoBehaviour
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
     }
 
-    private void HandleObstacleCollision()
+    private void HandleGameOver()
     {
-        if (!scriptEnabled) return; // Prevent further processing if game over has been triggered
-
-        moving = false;
-        knifeRigid.velocity = Vector2.zero; // Stop all momentum immediately
-        knifeRigid.bodyType = RigidbodyType2D.Dynamic; // Allow gravity to take effect
-        audioSource.PlayOneShot(fail);
-        GameObject.Find("TextMessage").GetComponent<Text>().text = "GAME OVER";
-        GameController.SaveHighScore();
-        GameController.ResetScore();
-
-        scriptEnabled = false; // Prevent further processing
-        GetComponent<Knife>().enabled = false; // Disable the script
-
-        StartCoroutine(HandleGameOverCoroutine());
-    }
-
-    public void HandleGameOver()
-    {
-        if (scriptEnabled && !hasHitTrunk)
+        if (scriptEnabled)
         {
+            // Prioritize game over
             moving = false;
             knifeRigid.velocity = Vector2.zero; // Stop all momentum immediately
             knifeRigid.bodyType = RigidbodyType2D.Dynamic; // Allow the knife to fall down naturally
-            GetComponent<PolygonCollider2D>().enabled = false;
+
+            // Disable all colliders
+            fullPolygonCollider.enabled = false;
+            internalBoxCollider.enabled = false;
+            externalBoxCollider.enabled = false;
+
+            // Apply a small force to push the knife away from the trunk and make it spin
+            knifeRigid.AddForce(new Vector2(Random.Range(-2f, 2f), 1f) * 5f, ForceMode2D.Impulse);
+            knifeRigid.angularVelocity = 500f; // Apply rapid spinning
+
+            // Set the knife to be in front of everything
+
+            GameObject knifeObject = knifeRigid.gameObject;
+            knifeObject.transform.position += new Vector3(0,0,-1);
 
             GameObject.Find("TextMessage").GetComponent<Text>().text = "GAME OVER";
             audioSource.PlayOneShot(fail);
@@ -155,9 +178,39 @@ public class Knife : MonoBehaviour
         return screenPoint.x >= 0 && screenPoint.x <= 1 && screenPoint.y >= 0 && screenPoint.y <= 1;
     }
 
+    private bool IsPointerOverButton()
+    {
+        // Check if the pointer is over a button
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            // Get the game object that the pointer is over
+            GameObject currentObject = EventSystem.current.currentSelectedGameObject;
+
+            // Check if the current UI object is a Button
+            if (currentObject != null && currentObject.GetComponent<Button>() != null)
+            {
+                Debug.Log("Pointer is over a button.");
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     private IEnumerator HandleGameOverCoroutine()
     {
         yield return new WaitForSeconds(2f);
-        GameController.ResetGame(); // Handle game restart
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // Reload the current scene
+    }
+
+    // Method to call when pausing the game
+    public void PauseGame(bool pause)
+    {
+        isPaused = pause;
+        Time.timeScale = pause ? 0 : 1; // Freeze or unfreeze game time
+        if (pause)
+        {
+            // Additional pause logic if needed
+        }
     }
 }

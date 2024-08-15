@@ -25,6 +25,10 @@ public class TrunkRotationController : MonoBehaviour
     void Update()
     {
         // Rotate Trunk in Z axis
-        transform.Rotate(new Vector3(0, 0, currentSpeed));
+        if (Time.timeScale > 0)
+        {
+            transform.Rotate(new Vector3(0, 0, currentSpeed));
+        }
+
     }
 }

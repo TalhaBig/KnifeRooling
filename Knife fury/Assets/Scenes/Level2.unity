@@ -344,7 +344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7ad0fb55c731354a96025929d403705, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knife: {fileID: 1774350658563012, guid: da910c5fcf9f85d4284f8ede8bd1b3c5, type: 3}
+  knife: {fileID: 1774350658563012, guid: 3cec68b2b70ffd24a8b429a40e3f205b, type: 3}
   text_score: {fileID: 621640376}
   text_high_score: {fileID: 1288884125}
 --- !u!1 &621640373
