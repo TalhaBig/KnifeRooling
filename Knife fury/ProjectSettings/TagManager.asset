@@ -7,6 +7,7 @@ TagManager:
   - Trunk
   - Knife
   - Hurdle
+  - Apple
   layers:
   - Default
   - TransparentFX
@@ -43,4 +44,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2018181469
     locked: 0

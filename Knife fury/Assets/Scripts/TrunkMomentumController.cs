@@ -31,7 +31,10 @@ public class TrunkMomentumController : MonoBehaviour
     void Update()
     {
         // Rotate the trunk in the Z axis
-        transform.Rotate(new Vector3(0, 0, currentSpeed));
+        if (Time.timeScale > 0)
+        {
+            transform.Rotate(new Vector3(0, 0, currentSpeed));
+        }
     }
 
     private IEnumerator ChangeSpeedOverTime()
