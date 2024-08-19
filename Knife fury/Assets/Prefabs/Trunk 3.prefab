@@ -1122,7 +1122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialSpeed: 0.5
-  speedIncreasePerLevel: 0.5
+  speedIncreasePerLevel: 0.3
   horizontalRange: 1
 --- !u!1 &6271876116268086607
 GameObject:

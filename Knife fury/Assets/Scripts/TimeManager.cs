@@ -63,6 +63,15 @@ public class TimerManager : MonoBehaviour
     {
         // Wait for 2 seconds before restarting the game
         yield return new WaitForSeconds(2f);
-        GameController.ResetGame(); // Handle game restart
+
+        // Get the current scene and level
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int currentLevel = GameController.GetCurrentLevel();
+
+        // Reload the scene
+        SceneManager.LoadScene(currentSceneIndex);
+
+        // Ensure the level is reset to the correct one
+        GameController.SetCurrentLevel(currentLevel);
     }
 }

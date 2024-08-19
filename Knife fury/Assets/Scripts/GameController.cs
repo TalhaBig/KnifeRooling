@@ -96,6 +96,11 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene(savedSceneIndex);
         Debug.Log($"Loaded Scene: Index = {savedSceneIndex}");
     }
+    public static void SetCurrentLevel(int level)
+    {
+        currentLevel = level;
+        // Additional logic to set up the game state for the level
+    }
 
     public static void LevelCompleted()
     {
