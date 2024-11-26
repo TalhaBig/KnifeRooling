@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Knife fury/Assets/Prefabs/Trunk 1.prefab.meta
 guid: e54f4413c95d1ca41bc57cb251f6f0bf
+========
+guid: d7df2e61ad90d8c429991124f6d49134
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Prefabs/IconKnife.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 

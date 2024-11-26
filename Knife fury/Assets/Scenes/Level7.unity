@@ -173,8 +173,13 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
+========
+  m_ReferenceResolution: {x: 900, y: 700}
+  m_ScreenMatchMode: 1
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -190,7 +195,7 @@ Canvas:
   m_GameObject: {fileID: 235014387}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 1721004905}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -221,7 +226,13 @@ RectTransform:
   - {fileID: 465372813}
   - {fileID: 1710006676}
   - {fileID: 1332101028}
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
   - {fileID: 1859565776}
+========
+  - {fileID: 1041790519}
+  - {fileID: 743365695}
+  - {fileID: 1037216031}
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -229,6 +240,182 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
+--- !u!1 &465372812
+========
+--- !u!1 &255046834
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
+  - component: {fileID: 465372813}
+  - component: {fileID: 465372816}
+  - component: {fileID: 465372815}
+  m_Layer: 5
+  m_Name: TextHighScore
+========
+  - component: {fileID: 255046835}
+  - component: {fileID: 255046837}
+  - component: {fileID: 255046836}
+  m_Layer: 5
+  m_Name: Text (TMP)
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
+--- !u!224 &465372813
+========
+--- !u!224 &255046835
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
+  m_GameObject: {fileID: 465372812}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.99968, y: 0.99968, z: 0.99968}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 235014391}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 18, y: 56.5}
+  m_SizeDelta: {x: -35, y: 113}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &465372815
+========
+  m_GameObject: {fileID: 255046834}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1037216031}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &255046836
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
+  m_GameObject: {fileID: 465372812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+========
+  m_GameObject: {fileID: 255046834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
+========
+  m_text: '|>'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: 2192
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 0
+  m_fontSizeMax: 0
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 0
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &255046837
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255046834}
+  m_CullTransparentMesh: 1
 --- !u!1 &465372812
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,6 +473,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 50
@@ -353,6 +541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7ad0fb55c731354a96025929d403705, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
   knife: {fileID: 1774350658563012, guid: da910c5fcf9f85d4284f8ede8bd1b3c5, type: 3}
   text_score: {fileID: 1710006678}
   text_high_score: {fileID: 465372815}
@@ -369,6 +558,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Hurdle: {fileID: 8584410406433972980, guid: 40bd7b1aa1377884d998f28ba315d882, type: 3}
+========
+  knife: {fileID: 1774350658563012, guid: 3cec68b2b70ffd24a8b429a40e3f205b, type: 3}
+  text_score: {fileID: 1710006678}
+  text_high_score: {fileID: 465372815}
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity
 --- !u!1 &668225115
 GameObject:
   m_ObjectHideFlags: 0
@@ -387,6 +581,7 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &668225116
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -433,11 +628,14 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &696621871
+========
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
   m_GameObject: {fileID: 696621870}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -494,10 +692,88 @@ MonoBehaviour:
   knifePanel: {fileID: 1859565776}
 --- !u!114 &776572156
 MonoBehaviour:
+========
+  m_GameObject: {fileID: 668225115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fdd8419d3c5a2044aa7e2c7fffe9f97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trunkPrefabs:
+  - {fileID: 5009809234305662154, guid: 8ab3ceab4d58a754dba1a93bc689f7d0, type: 3}
+  - {fileID: 5009809234305662154, guid: 97b5784cc7422bd45908737870d83fa4, type: 3}
+  maxcount: 2
+--- !u!4 &668225117
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668225115}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.18, y: 2.3, z: -0.04040093}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &743365692
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 743365695}
+  - component: {fileID: 743365694}
+  - component: {fileID: 743365693}
+  m_Layer: 5
+  m_Name: Pause
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &743365693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743365692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &743365694
+CanvasRenderer:
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
   m_GameObject: {fileID: 776572154}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -506,10 +782,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!4 &776572157
 Transform:
+========
+  m_GameObject: {fileID: 743365692}
+  m_CullTransparentMesh: 1
+--- !u!224 &743365695
+RectTransform:
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
   m_GameObject: {fileID: 776572154}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -519,6 +802,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+========
+  m_GameObject: {fileID: 743365692}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 235014391}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.000061035156}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity
 --- !u!1 &833950471
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,7 +885,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
 --- !u!1 &928992397
+========
+--- !u!1 &970449923
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -595,21 +897,35 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
   - component: {fileID: 928992399}
   - component: {fileID: 928992398}
   m_Layer: 0
   m_Name: Hurdel
+========
+  - component: {fileID: 970449926}
+  - component: {fileID: 970449925}
+  - component: {fileID: 970449924}
+  - component: {fileID: 970449927}
+  m_Layer: 0
+  m_Name: GameManager
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
 --- !u!114 &928992398
+========
+--- !u!114 &970449924
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
   m_GameObject: {fileID: 928992397}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -618,20 +934,343 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hurdle: {fileID: 8584410406433972980, guid: 40bd7b1aa1377884d998f28ba315d882, type: 3}
 --- !u!4 &928992399
+========
+  m_GameObject: {fileID: 970449923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3015f03d567bf0546aaca6247036a98d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iconKnifePrefab: {fileID: 6407952791445373743, guid: d7df2e61ad90d8c429991124f6d49134, type: 3}
+  knifePanel: {fileID: 1041790519}
+--- !u!114 &970449925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970449923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67d5be899a5d9c94d848b003774f5f89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &970449926
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
   m_GameObject: {fileID: 928992397}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.036765847, y: 0, z: 0}
+========
+  m_GameObject: {fileID: 970449923}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.26540378, y: 0.59568274, z: -47.79455}
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
+--- !u!1 &1332101027
+========
+--- !u!114 &970449927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970449923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6f37289f644b1048a100de072272759, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pausePanel: {fileID: 743365692}
+--- !u!1 &1037216030
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
+  - component: {fileID: 1332101028}
+  - component: {fileID: 1332101031}
+  - component: {fileID: 1332101030}
+  - component: {fileID: 1332101029}
+  m_Layer: 5
+  m_Name: Time Left
+========
+  - component: {fileID: 1037216031}
+  - component: {fileID: 1037216034}
+  - component: {fileID: 1037216033}
+  - component: {fileID: 1037216032}
+  m_Layer: 5
+  m_Name: PauseButton
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
+--- !u!224 &1332101028
+========
+--- !u!224 &1037216031
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
+  m_GameObject: {fileID: 1332101027}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.99968, y: 0.99968, z: 0.99968}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 235014391}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 18, y: 183}
+  m_SizeDelta: {x: -35, y: 113}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1332101029
+========
+  m_GameObject: {fileID: 1037216030}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 255046835}
+  m_Father: {fileID: 235014391}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -334, y: 546}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1037216032
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
+  m_GameObject: {fileID: 1332101027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03b4d0d74dbc414aac4aeef18f0f2ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialTime: 25
+  timeDecreasePerLevel: 2
+  timerText: {fileID: 1332101030}
+--- !u!114 &1332101030
+========
+  m_GameObject: {fileID: 1037216030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.6754716, g: 0.12617294, b: 0.12617294, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1037216033}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 970449927}
+        m_TargetAssemblyTypeName: PauseController, Assembly-CSharp
+        m_MethodName: TogglePause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1037216033
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
+  m_GameObject: {fileID: 1332101027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+========
+  m_GameObject: {fileID: 1037216030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 100
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1332101031
+========
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1037216034
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
+  m_GameObject: {fileID: 1332101027}
+  m_CullTransparentMesh: 1
+========
+  m_GameObject: {fileID: 1037216030}
+  m_CullTransparentMesh: 1
+--- !u!1 &1041790518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1041790519}
+  - component: {fileID: 1041790521}
+  - component: {fileID: 1041790520}
+  m_Layer: 5
+  m_Name: KnifePanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1041790519
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041790518}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.83360004, y: 0.83360004, z: 0.83360004}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 235014391}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 99, y: -37}
+  m_SizeDelta: {x: 200, y: -484}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1041790520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041790518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
+--- !u!222 &1041790521
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041790518}
+  m_CullTransparentMesh: 1
 --- !u!1 &1332101027
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,8 +1321,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f03b4d0d74dbc414aac4aeef18f0f2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialTime: 25
-  timeDecreasePerLevel: 2
+  initialTime: 15
+  timeDecreasePerLevel: 1
   timerText: {fileID: 1332101030}
 --- !u!114 &1332101030
 MonoBehaviour:
@@ -727,6 +1366,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1332101027}
   m_CullTransparentMesh: 1
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity
 --- !u!1 &1690979583
 GameObject:
   m_ObjectHideFlags: 0
@@ -805,9 +1445,15 @@ Transform:
   m_GameObject: {fileID: 1690979583}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_ConstrainProportionsScale: 1
+========
+  m_LocalPosition: {x: 165, y: 270, z: 0}
+  m_LocalScale: {x: 100, y: 100, z: 1.3}
+  m_ConstrainProportionsScale: 0
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -991,6 +1637,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
 --- !u!1 &1859565775
 GameObject:
   m_ObjectHideFlags: 0
@@ -1062,6 +1709,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1859565775}
   m_CullTransparentMesh: 1
+========
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity
 --- !u!1 &1941237019
 GameObject:
   m_ObjectHideFlags: 0
@@ -1133,7 +1782,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
   m_Text: Level 71
+========
+  m_Text: Level 41
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity
 --- !u!222 &1941237022
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1244,6 +1897,10 @@ SceneRoots:
   - {fileID: 235014391}
   - {fileID: 833950474}
   - {fileID: 668225117}
+<<<<<<<< HEAD:Knife fury/Assets/Scenes/Level7.unity
   - {fileID: 928992399}
   - {fileID: 696621872}
   - {fileID: 776572157}
+========
+  - {fileID: 970449926}
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scenes/Level4.unity

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Knife fury/Assets/Scripts/HurdelController.cs.meta
 guid: 6e28b21498a21a147abce750744c47da
+========
+guid: 634774c209be88743a3a62acedc17997
+>>>>>>>> 180b165980326bef8a926b7e9f12e9e6ba27043e:Knife fury/Assets/Scripts/Disapperaing.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
